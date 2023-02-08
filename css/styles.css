@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,8 @@
 }
 
 body {
-    font-family: 'Caveat Brush', cursive; 
+    font-family: 'Caveat Brush', cursive;
+    background: #ccc;
 }
 
 .wave {
@@ -20,10 +22,11 @@ body {
 
 .container {
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 7rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    gap: 7rem;
     padding: 0 2rem;
 }
 
@@ -37,44 +40,35 @@ body {
     width: 500px;
 }
 
-.login-container {
+.signup-container {
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
+.profile {
+    width: 100px;
 }
 
 form {
     width: 360px;
+    margin-top: 5em;
 }
 
 form h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin: 1rem 0;
+    font-size: 3em;
 }
 
 .input-div {
-    display: relative;
+    display: flex;
     display: grid;
-    grid-template-columns: 7% 93%;
+    grid-template-columns: 1fr 9fr;
+    grid-gap: 1em;
     margin: 25px;
     padding: 5px 0;
     border-bottom: 2px solid #d9d9d9;
-}
-
-.input-div:focus .i i {
-    color: #38d39f;
-}
-
-
-.one {
-    margin-top: 0;
-}
-
-.two {
-    margin-bottom: 4px;
 }
 
 .i {
@@ -91,7 +85,6 @@ form h2 {
     position: relative;
     height: 45px;
 }
-
 
 .input {
     position: absolute;
@@ -115,12 +108,12 @@ a {
     font-weight: bolder;
     font-size: 0.9rem;
     transition: .3s;
+    margin: 25px;
+    padding: 5px 0;
 }
 
-
 .btn {
-    display: block;
-    width: 100%;
+    width: 60%;
     height: 50px;
     border-radius: 25px;
     margin: 1rem 0;
@@ -136,8 +129,4 @@ a {
 
 .btn:hover {
     background-position: right;
-}
-
-.profile {
-    width: 100px;
 }
