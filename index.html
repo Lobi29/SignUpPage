@@ -1,7 +1,4 @@
-<!--Building the sign-up page -->
-
-
-<!DOCTYPe html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,42 +11,44 @@
     <img src="/images/wave.png" class="wave">
     <div class="container">
         <div class="img">
-            <img src="/images/phone.svg">
+            <img src="/images/phone.svg" class="phone">
         </div>
-        <div class="login-container">
-            <form action="index.html">
+
+        <div class="signup-container">
+            <form action="/" method="post">
                 <img src="/images/profile.svg" class="profile">
                 <h2>Welcome</h2>
-                <div class="input-div one">
+                <div class="input-div">
                     <div class="i">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-user fa-2x"></i>
                     </div>
                     <div>
-                        <input type="text" class="input" placeholder="First name">
+                        <input type="text" name="fName" class="input" placeholder="First Name">
                     </div>
                 </div>
-                <div class="input-div one">
+                <div class="input-div">
                     <div class="i">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-user fa-2x"></i>
                     </div>
                     <div>
-                        <input type="text" class="input" placeholder="Last name">
+                        <input type="text" name="lName" class="input" placeholder="Last Name">
                     </div>
                 </div>
-                <div class="input-div two">
+                <div class="input-div">
                     <div class="i">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope fa-2x"></i>
                     </div>
                     <div>
-                        <input type="email" class="input" placeholder="Password">
+                        <input type="email" name="email" class="input" placeholder="email">
                     </div>
                 </div>
-                <a href="#">Forgot Password?</a>
+                <a href="#">already have an account</a>
                 <input type="submit" class="btn" value="Sign Up">
             </form>
         </div>
     </div>
 
-    <script src="/js/script.js"></script>
+
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>
